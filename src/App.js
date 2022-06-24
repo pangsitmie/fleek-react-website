@@ -1,30 +1,26 @@
-import React from 'react';
-import fleekLogo from './fleek-logo.png';
-import reactLogo from './react-logo.svg';
+import React from 'react'
+import Header from './components/header/Header'
+import Nav from './components/nav/Nav'
+import About from './components/about/About'
+import Skill from './components/skills/Skill'
+import Experience from './components/experience/Experience'
+import Portfolio from './components/portfolio/Portfolio'
+import Contact from './components/contact/Contact'
+import Footer from './components/footer/Footer'
 
-import './App.css';
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={fleekLogo} className="Fleek-logo" alt="fleek-logo" />
-        <span className="Big-plus">+</span>
-        <img src={reactLogo} className="React-logo" alt="react-logo" />
-        <p>
-          React App deployed on IPFS through Fleek.
-        </p>
-        <a
-          className="App-link"
-          href="https://docs.fleek.co"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn More About Fleek!
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Header />
+      <Nav />
+      <About />
+      <Skill />
+      <Experience />
+      <Portfolio />
+      <Contact />
+      <Footer />
+    </>
+  )
 }
 
-export default App;
+export default App
